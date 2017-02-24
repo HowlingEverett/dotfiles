@@ -1,2 +1,8 @@
 *.log
 .idea
+.tern-port
+.vscode
+wallaby.config.js
+*.swp
+*.log
+*.log.*

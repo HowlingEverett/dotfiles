@@ -1,6 +1,9 @@
 set nocompatible
 filetype off
 
+set noswapfile
+set nobackup
+
 " Plugins
 call plug#begin()
 
@@ -39,6 +42,9 @@ set completeopt-=preview
 let g:ale_linters = {
 \  'javascript': ['standard']
 \}
+let g:ale_sign_error = '💩'
+let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
+highlight clear ALEErrorSign
 
 "== mxw/vim-jsx ==
 let g:jsx_ext_required = 0
@@ -54,3 +60,13 @@ inoremap <C-\> <ESC>:NERDTreeToggle<CR>
 
 " == lightline ==
 set laststatus=2
+let g:lightline = {
+  \   'active': {
+  \     'left': [ [ 'mode', 'paste' ], [ 'readonly', 'filename', 'modified' ], ['ale'] ],
+  \   },
+  \   'component': {
+  \     'readonly': '%{&readonly?"":""}',
+  \     'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
+  \     'ale': '%{ALEGetStatusLine()}'
+  \   }
+  \ }
