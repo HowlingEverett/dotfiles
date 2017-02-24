@@ -1,8 +1,12 @@
 set nocompatible
 filetype off
 
+" Disable stupid defaults
 set noswapfile
 set nobackup
+
+" Allow multiple buffers
+set hidden
 
 " Plugins
 call plug#begin()
