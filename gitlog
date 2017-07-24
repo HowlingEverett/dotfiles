@@ -1,0 +1,12 @@
+function git-log() {
+  git log -M40 --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %C(green bold)- %an %C(black bold)%cd (%cr)%Creset' --abbrev-commit --date=short "$@"
+}
+
+# git log
+function glg() {
+  if [[ $# == 0 ]] && git rev-parse @{u} &> /dev/null; then
+    git-log --graph @{u} HEAD
+  else
+    git-log --graph "$@"
+  fi
+}
