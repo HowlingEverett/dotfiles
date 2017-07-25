@@ -24,6 +24,7 @@ if $TERM_PROGRAM =~ "iTerm"
   set termguicolors
 endif
 colorscheme gruvbox
+set background=dark
 
 set number
 
