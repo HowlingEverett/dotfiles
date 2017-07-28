@@ -15,7 +15,10 @@ fresh bashrc --file
 fresh bash_profile --file
 fresh gitlog --file=~/.bash_profile
 fresh junegunn/vim-plug plug.vim --file=~/.vim/autoload/plug.vim
+fresh junegunn/vim-plug plug.vim --file=~/.config/nvim/autoload/plug.vim
 fresh gitignore_global --file
 fresh eslintrc --file
 fresh vimrc.plug --file
+fresh vimrc.plug --file=~/.config/nvim/init.vim.plug
 fresh vimrc --file
+fresh vimrc --file=~/.config/nvim/init.vim

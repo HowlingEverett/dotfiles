@@ -12,7 +12,11 @@ set hidden
 call plug#begin()
 
 try
-  source ~/.vimrc.plug
+  if has('nvim')
+    source ~/.config/nvim/init.vim.plug
+  else
+    source ~/.vimrc.plug
+  endif
 catch
 endtry
 
