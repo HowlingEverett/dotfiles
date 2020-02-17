@@ -1,4 +1,4 @@
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
+[ -s  "/usr/local/share/chruby/chruby.sh" ] && source /usr/local/share/chruby/chruby.sh
+[ -s "/usr/local/share/chruby/auto.sh" ] && source /usr/local/share/chruby/auto.sh

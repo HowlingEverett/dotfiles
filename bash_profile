@@ -2,6 +2,10 @@ if [ -f ~/.bashrc ]; then
    source ~/.bashrc
 fi
 
+if [ -f ~/.bash_profile.mac ]; then
+  source ~/.bash_profile.mac
+fi
+
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:~/code/plain-utils/bin:$PATH"
 
 export NVM_DIR="/Users/justin.marrington/.nvm"

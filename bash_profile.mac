@@ -1,0 +1,4 @@
+# MacOS specific configuration
+
+# Bash completion installed via homebrew
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
