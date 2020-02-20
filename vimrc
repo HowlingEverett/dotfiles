@@ -1,6 +1,8 @@
 set nocompatible
 filetype off
 
+set encoding=UTF-8
+
 " Disable stupid defaults
 set noswapfile
 set nobackup
