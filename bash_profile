@@ -28,4 +28,3 @@ alias vi=vim
 
 # Plain services docker
 export PATH=$PATH:~/code/plain-services-docker/bin
-
