@@ -2,3 +2,6 @@
 
 # Bash completion installed via homebrew
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+
+# Python executables on PATH
+[ -d "~/Library/Python/3.7/bin" ] && export PATH=~/Library/Python/3.7/bin/:$PATH
