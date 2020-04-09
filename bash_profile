@@ -19,7 +19,10 @@ fi
 
 # Include git status info in the prompt
 GIT_PS1_SHOWDIRTYSTATE=true
-export PS1='[\w$(__git_ps1)]\$ '
+if [ -f ~/.git-completion.bash ]; then
+  source ~/.git-completion.bash
+  export PS1='[\W]$(__git_ps1 "(%s)"): '
+fi
 
 # Use Fresh
 source ~/.fresh/build/shell.sh
@@ -28,3 +31,5 @@ alias vi=vim
 
 # Plain services docker
 export PATH=$PATH:~/code/plain-services-docker/bin
+
+export PATH=/usr/local/opt/python/libexec/bin:$PATH

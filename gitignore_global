@@ -6,3 +6,4 @@ wallaby.config.js
 *.swp
 *.log
 *.log.*
+.rakeTasks
