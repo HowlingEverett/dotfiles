@@ -1,8 +1,10 @@
 *.log*
 .idea
+.nova
+.generators
 .tern-port
 .vscode
-wallaby.config.js
+.sublime-workspace
 *.swp
 *.log
 *.log.*
