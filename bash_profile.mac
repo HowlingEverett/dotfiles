@@ -6,4 +6,7 @@
 # Python executables on PATH
 [ -d "~/Library/Python/3.7/bin" ] && export PATH=~/Library/Python/3.7/bin/:$PATH
 
-export PATH=/usr/local/opt/python/libexec/bin:$PATH
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
+export PATH="/usr/local/opt/qt@5.5/bin:$PATH"
+
