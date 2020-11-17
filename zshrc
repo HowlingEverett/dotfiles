@@ -1,22 +1,18 @@
-# Enable homebrew bash_completion
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
-fi
+# Load version control information
+autoload -Uz vcs_info
+precmd() { vcs_info }
 
-# Include git status info in the prompt
-GIT_PS1_SHOWDIRTYSTATE=true
-if [ -f ~/.git-completion.bash ]; then
-  source ~/.git-completion.bash
-  export PS1='[\W]$(__git_ps1 "(%s)"): '
-fi
+# Format the vcs_info_msg_0_ variable
+zstyle ':vcs_info:git:*' formats ''$'\Ue725'' %b'
+
+# Set up the prompt (with git branch name)
+setopt PROMPT_SUBST
+PROMPT='${PWD/#$HOME/~} ${vcs_info_msg_0_} %# '
 
 # Use Fresh
 source ~/.fresh/build/shell.sh
 
 alias vi=vim
-
-# Load FZF
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # Load Chruby
 [ -s  "/usr/local/share/chruby/chruby.sh" ] && source /usr/local/share/chruby/chruby.sh
