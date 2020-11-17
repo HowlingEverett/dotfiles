@@ -14,6 +14,8 @@ fresh freshshell/fresh bin/fresh --bin
 fresh bashrc --file
 fresh bash_profile --file
 fresh bash_profile.mac --file
+fresh zshenv --file
+fresh zshrc --file
 fresh gitlog --file=~/.bash_profile
 fresh gitignore_global --file
 fresh eslintrc --file
