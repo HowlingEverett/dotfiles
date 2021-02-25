@@ -11,14 +11,9 @@
 fresh freshshell/fresh bin/fresh --bin
 
 # Load vim plugins and config
-fresh bashrc --file
-fresh bash_profile --file
-fresh bash_profile.mac --file
 fresh zshenv --file
 fresh zshrc --file
-fresh gitlog --file=~/.bash_profile
 fresh gitignore_global --file
-fresh eslintrc --file
 fresh vimrc.plug --file
 fresh vimrc.plug --file=~/.config/nvim/init.vim.plug
 fresh vimrc --file
