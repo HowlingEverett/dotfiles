@@ -1,7 +1,8 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'wincent/terminus'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'wincent/terminus'
 Plug 'tpope/vim-sensible'
 Plug 'itchyny/lightline.vim'
