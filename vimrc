@@ -25,6 +25,7 @@ endtry
 call plug#end()
 
 syntax enable
+set re=0
 
 if $TERM_PROGRAM =~ "iTerm"
   set termguicolors
