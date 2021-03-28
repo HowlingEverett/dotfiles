@@ -24,5 +24,6 @@ Plug 'tpope/vim-repeat'
 Plug 'airblade/vim-gitgutter'
 Plug 'ervandew/supertab'
 Plug 'ryanoasis/vim-devicons'
+Plug 'nvie/vim-flake8'
 
 call plug#end()

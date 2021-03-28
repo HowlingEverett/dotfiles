@@ -94,9 +94,12 @@ let g:lightline.component_type = {
   \ }
 let g:lightline.active = {
   \  'left': [ [ 'mode', 'paste' ], [ 'readonly', 'filename', 'modified' ] ],
-  \  'right': [ [ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_infos', 'linter_ok' ] ],
+  \  'right': [ ['lineinfo'], [ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_infos', 'linter_ok' ] ],
   \   'component': {
   \     'readonly': '%{&readonly?"":""}',
   \     'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
   \   }
   \ }
+
+" == Python ==
+autocmd BufWritePost *.py call Flake8()
