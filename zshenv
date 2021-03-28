@@ -1,4 +1,4 @@
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 
 # Python
 export PATH=/usr/local/opt/python/libexec/bin:$PATH
