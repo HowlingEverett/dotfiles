@@ -17,3 +17,11 @@ alias vi=vim
 # Load Chruby
 [ -s  "/usr/local/share/chruby/chruby.sh" ] && source /usr/local/share/chruby/chruby.sh
 [ -s "/usr/local/share/chruby/auto.sh" ] && source /usr/local/share/chruby/auto.sh
+
+# Enable pyenv
+eval "$(pyenv init -)";
+
+# Enable local extensions of zshrc
+[ -s "$HOME/.zshrc_local" ] && source ~/.zshrc_local
+
+
