@@ -9,3 +9,5 @@
 *.log
 *.log.*
 .rakeTasks
+.run
+.angular
