@@ -7,7 +7,7 @@ export PATH=$PATH:/usr/local/opt/node/bin
 export PATH=$PATH:/Applications/Sublime\ Text.app/Contents/SharedSupport/bin
 
 # Load n Node version manager
-if [ -f /usr/local/bin/n ]; then
+if [ -f /usr/local/bin/n ] || [ -f /opt/homebrew/bin/n ]; then
   export N_PREFIX=$HOME/n
   export PATH=$N_PREFIX/bin:$PATH
 fi
