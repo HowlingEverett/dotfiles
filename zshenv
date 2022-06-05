@@ -11,8 +11,3 @@ if [ -f /usr/local/bin/n ]; then
   export N_PREFIX=$HOME/n
   export PATH=$N_PREFIX/bin:$PATH
 fi
-
-# Pyenv path config
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"

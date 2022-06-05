@@ -19,6 +19,8 @@ alias vi=vim
 [ -s "/usr/local/share/chruby/auto.sh" ] && source /usr/local/share/chruby/auto.sh
 
 # Enable pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)";
 
 # Enable local extensions of zshrc
